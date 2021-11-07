@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Rock Paper Scissors - play against the computer</h2>
+<h3>Choose a move!</h3>
+<form action="/result" method="post">
+<label for="name">Name</label>
+<input type="text" id="name" name="name">
+<label for="choice">Choice</label>
+<select id="choice" name="choice">
+    <option value="rock">Rock</option>
+    <option value="paper">Paper</option>
+    <option value="scissors">Scissors</option>
+</select>
+<input id= "sbmt_bttn" type="submit" value="Submit">
+</form>
+
+{% endblock %}
